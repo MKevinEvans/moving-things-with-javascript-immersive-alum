@@ -3,4 +3,4 @@ function load(){
 let dodger = document.getElementById('dodger');
 dodger.style.backgroundcolor="#000000"
 }
-document.addEventListener("DOMElements")
+document.addEventListener("DOMComtentLoaded", load);
