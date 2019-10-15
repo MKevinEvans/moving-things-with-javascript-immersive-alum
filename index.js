@@ -5,6 +5,7 @@ function load(){
   dodger.style.backgroundColor="#FF69B4";
   let distBottom = 0;
   let distLeft = 0;
+  moveDodger();
   
 function moveDodger(){
   dodger.style.bottom = `${distBottom}px`;
@@ -21,11 +22,11 @@ function moveDodger(){
           moveDodger();
           break;
         case "ArrowLeft":
-          distLeft += 10;
+          distLeft -= 10;
           moveDodger();
           break;
         case "ArrowRight":
-          distLeft -= 10;
+          distLeft += 10;
           moveDodger();
           break;
       }
