@@ -3,8 +3,8 @@ function load(){
   console.log("loaded")
   let dodger = document.getElementById('dodger');
   dodger.style.backgroundColor="#FF69B4";
-  dodger.style.left;
-  dodger.style.bottom = "100px";
+  dodger.style.left = "0px";
+  dodger.style.bottom = "0px";
 
 }
 document.addEventListener("DOMComtentLoaded", load());
