@@ -5,6 +5,8 @@ function load(){
   dodger.style.backgroundColor="#FF69B4";
   dodger.style.left = "0px";
   dodger.style.bottom = "0px";
-
+  function controls(){
+    document.addEventListener("DownArrow")
+  }
 }
 document.addEventListener("DOMComtentLoaded", load());
