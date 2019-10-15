@@ -6,7 +6,13 @@ function load(){
   dodger.style.left = "0px";
   dodger.style.bottom = "0px";
   function controls(){
-    document.addEventListener("DownArrow")
+    document.addEventListener("keydown", (e.key)=>{
+      switch(e){
+        case "ArrowUp":
+          dodger.style.bottom += 10;
+          break
+      }
+    })
   }
 }
 document.addEventListener("DOMComtentLoaded", load());
