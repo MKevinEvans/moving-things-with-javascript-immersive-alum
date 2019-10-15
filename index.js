@@ -3,22 +3,30 @@ function load(){
   console.log("loaded")
   let dodger = document.getElementById('dodger');
   dodger.style.backgroundColor="#FF69B4";
-  dodger.style.left = "0px";
-  dodger.style.bottom = "0px";
+  let distBottom = 0;
+  let distLeft = 0;
+  
+function moveDodger(){
+  dodger.style.left = `${distBottom}px`;
+  dodger.style.bottom = `${distLeftpx}`;
+}
     document.addEventListener("keydown", function(e) {
       switch (e.key) {
         case "ArrowUp":
-          dodger.style.bottom += 10;
-          console.log("up pressed and style.bottom = "+ dodger.style.bottom)
+          distBottom += 10;
+          moveDodger();
           break;
         case "ArrowDown":
-          dodger.style.bottom -= 10;
+          distBottom-= 10;
+          moveDodger();
           break;
         case "ArrowLeft":
-          dodger.style.left += 10;
+          distleft += 10;
+          moveDodger();
           break;
         case "ArrowRight":
-          dodger.style.bottom -= 10;
+          distleft -= 10;
+          moveDodger();
           break;
       }
     })
