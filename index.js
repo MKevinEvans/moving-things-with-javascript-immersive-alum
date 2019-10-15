@@ -9,6 +9,7 @@ function load(){
       switch (e.key) {
         case "ArrowUp":
           dodger.style.bottom += 10;
+          console.log("up pressed and style.bottom = "+ dodger.style.bottom)
           break;
         case "ArrowDown":
           dodger.style.bottom -= 10;
