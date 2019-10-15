@@ -21,11 +21,11 @@ function moveDodger(){
           moveDodger();
           break;
         case "ArrowLeft":
-          distleft += 10;
+          distLeft += 10;
           moveDodger();
           break;
         case "ArrowRight":
-          distleft -= 10;
+          distLeft -= 10;
           moveDodger();
           break;
       }
