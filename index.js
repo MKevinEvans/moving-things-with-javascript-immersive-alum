@@ -8,7 +8,7 @@ function load(){
   
 function moveDodger(){
   dodger.style.left = `${distBottom}px`;
-  dodger.style.bottom = `${distLeftpx}`;
+  dodger.style.bottom = `${distLeft}px`;
 }
     document.addEventListener("keydown", function(e) {
       switch (e.key) {
