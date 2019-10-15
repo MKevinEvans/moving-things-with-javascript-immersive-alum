@@ -5,14 +5,21 @@ function load(){
   dodger.style.backgroundColor="#FF69B4";
   dodger.style.left = "0px";
   dodger.style.bottom = "0px";
-  function controls(){
-    document.addEventListener("keydown", (e.key)=>{
-      switch(e){
+    document.addEventListener("keydown", function(e) {
+      switch (e.key) {
         case "ArrowUp":
           dodger.style.bottom += 10;
-          break
+          break;
+        case "ArrowDown":
+          dodger.style.bottom -= 10;
+          break;
+        case "ArrowLeft":
+          dodger.style.left += 10;
+          break;
+        case "ArrowRight":
+          dodger.style.bottom -= 10;
+          break;
       }
     })
-  }
 }
 document.addEventListener("DOMComtentLoaded", load());
